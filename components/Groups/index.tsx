@@ -1,5 +1,10 @@
+import Header from "../Header";
 import { Container } from "./styles";
 
 export default function Groups() {
-  return <Container></Container>;
+  return (
+    <Container>
+      <Header />
+    </Container>
+  );
 }
