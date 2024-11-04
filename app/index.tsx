@@ -1,7 +1,7 @@
 import Groups from "@/components/Groups";
 import theme from "@/theme";
 import { ThemeProvider } from "styled-components/native";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, StatusBar } from "react-native";
 import {
   useFonts,
   Roboto_400Regular,
@@ -14,7 +14,12 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={theme}>
-      {!fontsLoaded ? <Groups /> : <Loading />}
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   );
 }
