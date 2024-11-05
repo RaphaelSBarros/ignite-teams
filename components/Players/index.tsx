@@ -1,4 +1,5 @@
 import ButtonIcon from "../ButtonIcon";
+import Filter from "../Filter";
 import Header from "../Header";
 import Highlight from "../Highlight";
 import Input from "../Input";
@@ -19,6 +20,8 @@ export function Players() {
 
         <ButtonIcon icon="add" />
       </Form>
+
+      <Filter title="Time A" isActive />
     </Container>
   );
 }
