@@ -9,6 +9,7 @@ import {
 } from "@expo-google-fonts/roboto";
 import Loading from "@/components/Loading";
 import NewGroup from "@/components/NewGroup";
+import { Players } from "@/components/Players";
 
 export default function Home() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
@@ -20,7 +21,7 @@ export default function Home() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
