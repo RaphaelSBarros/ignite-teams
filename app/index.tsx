@@ -20,7 +20,7 @@ export default function Home() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   );
 }
